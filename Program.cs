@@ -38,12 +38,13 @@ string[] СonversionStrToArr(string line, string separator){
 void PrintArray(string[] inputArray)
 {
     int i = 0;
+     Console.Write("[");
     while (i < inputArray.Length - 1)
     {
-        Console.Write(inputArray[i] + ", ");
+        Console.Write("\""+ inputArray[i] + "\"" + ",");
         i++;
     }
-    Console.WriteLine(inputArray[i]);
+    Console.WriteLine("\""+ inputArray[i] + "\"" + "]");
 }
 
 Console.Clear();
